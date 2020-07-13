@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Assignment3</title>
+    </head>
+    <body>
+        <h1><center><u>Current Date In Different Formats :</u></center></h1>
+        <h3>
+        <script>
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth();
+            var yyyy = today.getFullYear();
+            if(dd < 10)
+            {
+                dd = '0' + dd;
+            }
+            if(mm < 10)
+            {
+                mm = '0' + mm;
+            }
+            today = mm + '-' + dd + '-' + yyyy;
+            document.write("1.Current Date in mm-dd-yyyy format : " +today);
+            document.write("<br/>");
+            today = mm + '/' + dd + '/' + yyyy;
+            document.write("2.Current Date in mm/dd/yyyy format : " +today);
+            document.write("<br/>");
+            today = dd + '-' + mm + '-' + yyyy;
+            document.write("3.Current Date in dd-mm-yyyy format : " +today);
+            document.write("<br/>");
+            today = dd + '/' + mm + '/' + yyyy;
+            document.write("4.Current Date in dd/mm/yyyy format : " +today);
+        </script>
+        </h3>
+    </body>
+</html>
