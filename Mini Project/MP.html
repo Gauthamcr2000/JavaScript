@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>MP</title>
+        <style>
+            #mp{
+                background-color: lightgoldenrodyellow;
+                font-style: oblique;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 20px;
+                color: red;
+            }
+            #text{
+                text-decoration: underline;
+            }
+            #quotedisplay{
+                color: green;
+                font-style: italic;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            #btn{
+                background-color: black;
+                color: white;
+                font-size: large;
+                padding: 10 40 10 40;
+            }
+            #para{
+                font-size: x-large;
+                color: blue;
+                text-align: center;
+                padding-top: 20px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        </style>
+    </head>
+    <body id = mp>
+        <h1 id = "text">Random Quote:</h1>
+        <h1 id = "quotedisplay"></h1>
+        <center><button id = "btn" onclick = "newquote()">CLICK</button></center>
+        <p id = "para">Each time we click on the button "CLICK" a random quote will be generated.</p>
+        <script src = "mp.js"></script>
+    </body>
+</html>
